@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>View Employee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+    view Employee (total employee = <%=emp.length%>)
+
+    <table border="1px">
+
+        <tbody>
+                <tr>   
+                        <th>Name</th>
+                        <th>Salary</th>
+                        <th>Age</th>
+                        <th>Position</th>
+                        <th>City</th>
+                    </tr>
+                    <% for(var i=0; i<emp.length;i++) { %>
+                    <tr>
+                        <td><%= emp[i].name %></td>
+                        <td><%= emp[i].salary %></td>
+                        <td><%= emp[i].age %></td>
+                        <td><%= emp[i].detail.position %></td>
+                        <td><%= emp[i].detail.city %></td>
+                    </tr>
+                    <%}%>
+        </tbody>
+    </table>
+</body>
+</html>

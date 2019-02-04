@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Details</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <p>Enter your Employee Details</p>
+
+    <a href="/view">View Employee</a>
+
+    <form action="/create" method="post">
+      <table>
+        <tr>
+          <td>Enter Name</td>
+          <td><input type="text" name="name" placeholder="Employee Name"></td>
+        </tr>
+        <tr>
+          <td>Enter Salary</td>
+          <td><input type="text" name="salary" placeholder="salary"></td>
+        </tr>
+        <tr>
+          <td>Enter Age</td>
+          <td><input type="number" name="age" placeholder="Age"></td>
+        </tr>
+        <tr>
+          <td>
+            <td><input type="submit" value="create"></td>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
